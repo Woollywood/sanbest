@@ -1,0 +1,46 @@
+$(function() {
+
+	$('input.js-phone-field').inputmask({ 
+        mask: "+7 (999) 999-99-99",
+        showMaskOnHover: false,
+        onincomplete: function() {
+            $(this).val("");
+        }
+    });
+
+    $('form.js-form-call').submit(function(e) {
+		e.preventDefault();
+		let form = $(this);
+		let btn = form.find('button');
+		btn.prop('disabled', true);
+		let _Seconds = $('.js-timer-call .seconds').text(),
+			_Ms = 100,
+			int;
+		int = setInterval(function() { // запускаем интервал
+			if(_Seconds == 0) {
+				clearInterval(int);
+			} else {
+		  		if(_Ms > 0) {
+		    		_Ms--;
+		    		$('.js-timer-call .ms').text(('0' + _Ms).slice(-2));
+		    	} else {
+		    		_Seconds--;
+		    		$('.js-timer-call .seconds').text(('0' + _Seconds).slice(-2));
+		    		_Ms = 100;
+		    	}
+		  	}
+		}, 10);
+		formData = new FormData(form.get(0));
+		$.ajax({
+			dataType: 'json',
+			data: formData,
+			contentType: false,
+			processData: false,
+			type: form.attr('method'),
+			url:  'https://api-node1.calltouch.ru/calls-service/RestAPI/requests/562/register/'
+		}).fail(function() {
+		      console.log('fail');
+	    });
+	});
+
+});

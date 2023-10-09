@@ -1,0 +1,6 @@
+<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 15 16" id="minus" xmlns="http://www.w3.org/2000/svg">
+<rect x="15" y="7.5" width="1" height="15" transform="rotate(90 15 7.5)"/>
+</symbol><symbol viewBox="0 0 15 16" id="plus" xmlns="http://www.w3.org/2000/svg">
+<rect x="7" y="0.5" width="1" height="15"/>
+<rect x="15" y="7.5" width="1" height="15" transform="rotate(90 15 7.5)"/>
+</symbol></svg>

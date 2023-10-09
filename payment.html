@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://dev3.sanbest.ru/ -->
+<html lang="ru" class="bx-core bx-no-touch bx-no-retina bx-chrome">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<!-- <base href="/"> -->
+
+		<!--    <link rel="icon" href="https://www.fmeter.ru/favicon.svg">-->
+
+		<script type="text/javascript" async="" src="js/ba.js.Без названия"></script>
+		<script type="text/javascript" data-skip-moving="true">
+			(function (w, d, n) {
+				var cl = 'bx-core';
+				var ht = d.documentElement;
+				var htc = ht ? ht.className : undefined;
+				if (htc === undefined || htc.indexOf(cl) !== -1) {
+					return;
+				}
+
+				var ua = n.userAgent;
+				if (/(iPad;)|(iPhone;)/i.test(ua)) {
+					cl += ' bx-ios';
+				} else if (/Android/i.test(ua)) {
+					cl += ' bx-android';
+				}
+
+				cl += /(ipad|iphone|android|mobile|touch)/i.test(ua) ? ' bx-touch' : ' bx-no-touch';
+
+				cl += w.devicePixelRatio && w.devicePixelRatio >= 2 ? ' bx-retina' : ' bx-no-retina';
+
+				var ieVersion = -1;
+				if (/AppleWebKit/.test(ua)) {
+					cl += ' bx-chrome';
+				} else if ((ieVersion = getIeVersion()) > 0) {
+					cl += ' bx-ie bx-ie' + ieVersion;
+					if (ieVersion > 7 && ieVersion < 10 && !isDoctype()) {
+						cl += ' bx-quirks';
+					}
+				} else if (/Opera/.test(ua)) {
+					cl += ' bx-opera';
+				} else if (/Gecko/.test(ua)) {
+					cl += ' bx-firefox';
+				}
+
+				if (/Macintosh/i.test(ua)) {
+					cl += ' bx-mac';
+				}
+
+				ht.className = htc ? htc + ' ' + cl : cl;
+
+				function isDoctype() {
+					if (d.compatMode) {
+						return d.compatMode == 'CSS1Compat';
+					}
+
+					return d.documentElement && d.documentElement.clientHeight;
+				}
+
+				function getIeVersion() {
+					if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)) {
+						return -1;
+					}
+
+					var rv = -1;
+					if (!!w.MSStream && !w.ActiveXObject && 'ActiveXObject' in w) {
+						rv = 11;
+					} else if (!!d.documentMode && d.documentMode >= 10) {
+						rv = 10;
+					} else if (!!d.documentMode && d.documentMode >= 9) {
+						rv = 9;
+					} else if (d.attachEvent && !/Opera/.test(ua)) {
+						rv = 8;
+					}
+
+					if (rv == -1 || rv == 8) {
+						var re;
+						if (n.appName == 'Microsoft Internet Explorer') {
+							re = new RegExp('MSIE ([0-9]+[\.0-9]*)');
+							if (re.exec(ua) != null) {
+								rv = parseFloat(RegExp.$1);
+							}
+						} else if (n.appName == 'Netscape') {
+							rv = 11;
+							re = new RegExp('Trident/.*rv:([0-9]+[\.0-9]*)');
+							if (re.exec(ua) != null) {
+								rv = parseFloat(RegExp.$1);
+							}
+						}
+					}
+
+					return rv;
+				}
+			})(window, document, navigator);
+		</script>
+
+		<link href="css/fancybox.css" type="text/css" rel="stylesheet" />
+		<link href="css/popup.css" type="text/css" rel="stylesheet" />
+		<link href="css/main.min.css" type="text/css" data-template-style="true" rel="stylesheet" />
+		<link href="css/styles.css" type="text/css" data-template-style="true" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.css">
+		<link href="slick/slick.css" rel="stylesheet" />
+		<link href="slick/slick-theme.css" rel="stylesheet" />
+		<link href="css/main.css" rel="stylesheet" />
+		<link href="css/media.css" rel="stylesheet" />
+
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width" />
+
+		<title>Интернет магазин сантехники Sanbest</title>
+	</head>
+	<body>
+		<div id="panel"></div>
+		<div class="wrapper">
+			<header class="header">
+				<nav class="topMenu">
+					<div class="container">
+						<ul class="topMenu__list">
+							<li class="topMenu__list-item">
+								<a href="https://dev3.sanbest.ru/brands/" class="topMenu__list-link">Бренды</a>
+							</li>
+
+							<li class="topMenu__list-item">
+								<a href="https://dev3.sanbest.ru/customers/delivery/" class="topMenu__list-link"
+									>Доставка и оплата</a
+								>
+							</li>
+
+							<li class="topMenu__list-item">
+								<a href="https://dev3.sanbest.ru/news/" class="topMenu__list-link">Акции</a>
+							</li>
+
+							<li class="topMenu__list-item">
+								<a href="https://dev3.sanbest.ru/contacts/" class="topMenu__list-link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="container header__container">
+					<a class="logo header__logo"> <img src="images/sanbest_logo.svg" alt="" /> </a>
+					<div class="header__center">
+						<a href="tel:+7 (499) 110 42 61" class="header__phone"> +7 (499) 110 42 61 </a>
+						<a
+							data-fancybox="dialog"
+							data-src="#dialog-content"
+							href="https://dev3.sanbest.ru/#"
+							class="callBtn header__callBtn"
+							>Обратный звонок</a
+						>
+						<span class="time-work header__time-work"> Ежедневно с 9 до 22 </span>
+					</div>
+					<div class="header__btns">
+						<a href="tel:+7 (499) 110 42 61" class="header__mobilePhone"
+							><svg class="header__mobilePhone-svg"><use xlink:href="#phone"></use></svg
+						></a>
+						<a href="https://dev3.sanbest.ru/favorites/" class="favoritesBtn"
+							><span class="favoritesBtn__countCircle countCircle" style="display: none"></span
+							><svg class="favoritesBtn__icon"><use xlink:href="#favorites"></use></svg
+						></a>
+						<a href="https://dev3.sanbest.ru/compare/" class="compareBtn"
+							><span class="compareBtn__countCircle countCircle" style="display: none"></span
+							><svg class="compareBtn__icon"><use xlink:href="#compare"></use></svg
+						></a>
+						<a href="https://dev3.sanbest.ru/personal/cart/" class="basketBtn header__btns-basketBtn"
+							><span class="basketBtn__countCircle countCircle" style="display: none">0</span
+							><svg class="basketBtn__icon"><use xlink:href="#basket"></use></svg
+						></a>
+						<span class="header__btns-price" style="display: none">0 Р</span>
+					</div>
+				</div>
+				<!-- /.container -->
+			</header>
+
+			<div class="catalog-search">
+				<div class="container catalog-search__container">
+					<nav class="catalog" id="catalog">
+						<div class="catalog__wrap">
+							<button type="button" class="catalog__btn js-catalogBtn">
+								<svg class="catalog__btn-burger"><use xlink:href="#icon-burger"></use></svg>
+								Каталог
+								<svg class="catalog__btn-arrow"><use xlink:href="#arrow-down"></use></svg>
+							</button>
+							<ul class="catalog__menu" id="catalog-menu" style="display: none">
+								<li class="catalog__menu-item">
+									<a href="https://dev3.sanbest.ru/catalog/vanny" class="catalog__menu-link">Ванны</a>
+								</li>
+								<li class="catalog__menu-item">
+									<a href="https://dev3.sanbest.ru/catalog/dushevye_dveri" class="catalog__menu-link"
+										>Душевые двери</a
+									>
+								</li>
+								<li class="catalog__menu-item">
+									<a href="https://dev3.sanbest.ru/catalog/dushevye_kabiny" class="catalog__menu-link"
+										>Душевые кабины</a
+									>
+								</li>
+								<li class="catalog__menu-item">
+									<a
+										href="https://dev3.sanbest.ru/catalog/dushevye_ograzhdeniya"
+										class="catalog__menu-link"
+										>Душевые ограждения</a
+									>
+								</li>
+								<li class="catalog__menu-item">
+									<a
+										href="https://dev3.sanbest.ru/catalog/dushevye_poddony"
+										class="catalog__menu-link"
+										>Душевые поддоны</a
+									>
+								</li>
+								<li class="catalog__menu-item">
+									<a href="https://dev3.sanbest.ru/catalog/dushevye_ugly" class="catalog__menu-link"
+										>Душевые углы</a
+									>
+								</li>
+								<li class="catalog__menu-item">
+									<a href="https://dev3.sanbest.ru/catalog/kryshki_bide" class="catalog__menu-link"
+										>Крышки-биде</a
+									>
+								</li>
+								<li class="catalog__menu-item">
+									<a href="https://dev3.sanbest.ru/catalog/rakovini" class="catalog__menu-link"
+										>Раковины</a
+									>
+								</li>
+								<li class="catalog__menu-item catalog__menu--submenu">
+									<a
+										href="https://dev3.sanbest.ru/catalog/slivy_perelivy_i_sifony"
+										class="catalog__menu-link"
+										>Сливы переливы и сифоны
+										<svg class="catalog__menu-svg"><use xlink:href="#arrow-down"></use></svg
+									></a>
+									<div class="catalog__menu-submenu">
+										<div class="catalog__menu-title">Сливы переливы и сифоны</div>
+										<div class="catalog__menu-row">
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/donnye_klapany"
+															>Донные клапаны</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_lotki_i_trapy"
+															>Душевые лотки и трапы</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/podvody_dlya_vody"
+															>Подводы для воды</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/sifony_dlya_bide"
+															>Сифоны для биде</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/sifony_dlya_vann"
+															>Сифоны для ванн</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/sifony_dlya_pissuarov"
+															>Сифоны для писсуаров</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/sifony_dlya_poddonov"
+															>Сифоны для поддонов</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/sifony_dlya_rakovin"
+															>Сифоны для раковин</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/slivy_perelivy"
+															>Сливы-переливы</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/sifony_dlya_chash_genuya"
+															>Сифоны для чаш Генуя</a
+														>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog__menu-item catalog__menu--submenu">
+									<a href="https://dev3.sanbest.ru/catalog/unitazi-1" class="catalog__menu-link"
+										>Унитазы
+										<svg class="catalog__menu-svg"><use xlink:href="#arrow-down"></use></svg
+									></a>
+									<div class="catalog__menu-submenu">
+										<div class="catalog__menu-title">Унитазы</div>
+										<div class="catalog__menu-row">
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/bachki_skrytogo_montazha"
+															>Бачки скрытого монтажа</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/gigienicheskie_dushi"
+															>Гигиенические души</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/installyatsii_dlya_unitaza"
+															>Инсталляции для унитаза</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/knopki_dlya_installyatsiy"
+															>Кнопки для инсталляций</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/kryshki_bide"
+															>Крышки-биде</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/chashi_genuya"
+															>Чаши Генуя</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/unitazy">Унитазы</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog__menu-item">
+									<a
+										href="https://dev3.sanbest.ru/catalog/shtorki_dlya_vanny"
+										class="catalog__menu-link"
+										>Шторки для ванны</a
+									>
+								</li>
+								<li class="catalog__menu-item catalog__menu--submenu">
+									<a href="https://dev3.sanbest.ru/catalog/dushevie" class="catalog__menu-link"
+										>Душевая программа
+										<svg class="catalog__menu-svg"><use xlink:href="#arrow-down"></use></svg
+									></a>
+									<div class="catalog__menu-submenu">
+										<div class="catalog__menu-title">Душевая программа</div>
+										<div class="catalog__menu-row">
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/gigienicheskie_dushi"
+															>Гигиенические души</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevaia%20garnitura"
+															>Душевые гарнитуры</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_kolonny"
+															>Душевые колонны</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/bokovie_dushi"
+															>Форсунки для душа</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_paneli"
+															>Душевые панели</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/Verhnij-dush"
+															>Верхние души</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/derzhateli_verkhnego_dusha"
+															>Держатели верхнего душа</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/derzhateli_ruchnogo_dusha"
+															>Держатели ручного душа</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/Leika"
+															>Душевые лейки</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_sistem"
+															>Душевые системы</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_shlangi"
+															>Душевые шланги</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/Dushevie%20shtangi"
+															>Душевые штанги</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/komplektuyushchie_dlya_dushevoy"
+															>Комплектующие для душевой</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/Podkljuchenija_dlja_dushevogo_shlanga"
+															>Подключения для шланга</a
+														>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog__menu-item catalog__menu--submenu">
+									<a
+										href="https://dev3.sanbest.ru/catalog/mebel_dlya_vannoy"
+										class="catalog__menu-link"
+										>Мебель для ванной
+										<svg class="catalog__menu-svg"><use xlink:href="#arrow-down"></use></svg
+									></a>
+									<div class="catalog__menu-submenu">
+										<div class="catalog__menu-title">Мебель для ванной</div>
+										<div class="catalog__menu-row">
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/zerkala">Зеркала</a>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/penaly_shkafy"
+															>Пеналы, шкафы</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/tumby_s_rakovinami"
+															>Тумбы с раковинами</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/konsoli_s_rakovinami"
+															>Консоли</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li><a href="https://dev3.sanbest.ru/catalog/komody">Комоды</a></li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/nizhnie_tumby"
+															>Нижние тумбы</a
+														>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog__menu-item catalog__menu--submenu">
+									<a href="https://dev3.sanbest.ru/catalog/smesiteli" class="catalog__menu-link"
+										>Смесители
+										<svg class="catalog__menu-svg"><use xlink:href="#arrow-down"></use></svg
+									></a>
+									<div class="catalog__menu-submenu">
+										<div class="catalog__menu-title">Смесители</div>
+										<div class="catalog__menu-row">
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/deviatory"
+															>Девиаторы</a
+														>
+													</li>
+													<li><a href="https://dev3.sanbest.ru/catalog/izlivy">Изливы</a></li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/smesiteli-vanna"
+															>Смесители для ванны</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/smesiteli-dush"
+															>Смесители для душа</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/smesiteli-kuhnia"
+															>Смесители для кухни</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/smesiteli-rakovina"
+															>Смесители для раковины</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/smesiteli-bide"
+															>Смесители для биде</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/vstroika"
+															>Встраиваемые смесители</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/venteli">Вентили</a>
+													</li>
+													<li><a href="https://dev3.sanbest.ru/catalog/nabory">Наборы</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog__menu-item catalog__menu--submenu">
+									<a href="https://dev3.sanbest.ru/catalog/accessories" class="catalog__menu-link"
+										>Аксессуары для ванной
+										<svg class="catalog__menu-svg"><use xlink:href="#arrow-down"></use></svg
+									></a>
+									<div class="catalog__menu-submenu">
+										<div class="catalog__menu-title">Аксессуары для ванной</div>
+										<div class="catalog__menu-row">
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/abazhur_dlya_svetilnika"
+															>Абажур для светильника</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/banketki_pufy"
+															>Банкетки,пуфы</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/vazy_kuvshiny"
+															>Вазы, кувшины</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/vedra_dlya_musora"
+															>Ведра для мусора</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/vedra_dlya_shampanskogo"
+															>Ведра для шампанского</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/ventilyatory"
+															>Вентиляторы</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/derzhateli_dlya_zubnykh_shchetok"
+															>Держатели для зубных щеток</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/derzhateli_dlya_nakladok_na_unitaz"
+															>Держатели для накладок на унитаз</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/derzhateli_dlya_osvezhitelya_vozdukha"
+															>Держатели для освежителя воздуха</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/derzhateli_dlya_fen"
+															>Держатели для фена</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/derzhateli_so_stakanom_mylnitsey_dispenserom"
+															>Держатели со стаканом/мыльницей/диспенсером</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/mylnitsy_i_dispensery"
+															>Диспенсеры</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/zerkala_kosmeticheskie"
+															>Зеркала косметические</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/kandelyabr"
+															>Канделябр</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/karnizy_dlya_vanny"
+															>Карнизы для ванны</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/karnizy_dlya_poddonov"
+															>Карнизы для поддонов</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/kovriki">Коврики</a>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/korziny_dlya_belya"
+															>Корзины для белья</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/kryuchki">Крючки</a>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/nabory_aksessuarov"
+															>Наборы аксессуаров</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/polki_dlya_tualetnykh_prinadlezhnostey_dlya_polotenets_dlya_dushevoy_shtangi_gazetnitsy"
+															>Полки</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/polotentsa"
+															>Полотенца</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/polotentsederzhateli"
+															>Полотенцедержатели</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/salfetnitsy"
+															>Салфетницы</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/sideniya_dlya_dusha"
+															>Сидения для душа</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/skrebok%29">Скребок</a>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/stakany">Стаканы</a>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/stoyki_dlya_vannoy"
+															>Стойки для ванной</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/tekstilnye_shtorki_dlya_vannoy"
+															>Текстильные шторки для ванной</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/torshery">Торшеры</a>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/khalaty_bannye"
+															>Халаты банные</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/ershiki_dlya_tualeta_kolby"
+															>Ершики для туалета</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/mylnitsy">Мыльницы</a>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/derzhateli_dlya_tualetnoy_bumagi_osvezhitelya_vozdukha"
+															>Держатели для туалетной бумаги</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/ruchki_poruchni_dlya_vannoy"
+															>Поручни</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/gazetnitsy"
+															>Газетницы</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/svetilniki_bra"
+															>Светильники, бра</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/stakany_vazy_podsvechniki_banochki_dlya_vaty_vedra_dlya_shampanskogo"
+															>Баночки для ваты</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/verevka_dlya_bel"
+															>Веревка для белья</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dvernoy_upor"
+															>Дверной упор</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/derzhateli_dlya_bumazhnykh_polotenets"
+															>Держатели для бумажных полотенец</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/derzhateli_dlya_meshko"
+															>Держатели для мешков</a
+														>
+													</li>
+													<li><a href="https://dev3.sanbest.ru/catalog/lotki">Лотки</a></li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/organayzery"
+															>Органайзеры</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/pepelnitsy"
+															>Пепельницы</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/podsvechniki"
+															>Подсвечники</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/sideniya_dlya_vanny"
+															>Сидения для ванны</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/stoliki">Столики</a>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/sushilka_dlya_ruk"
+															>Сушилка для рук</a
+														>
+													</li>
+													<li><a href="https://dev3.sanbest.ru/catalog/feny">Фены</a></li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/fontany">Фонтаны</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog__menu-item catalog__menu--submenu">
+									<a href="https://dev3.sanbest.ru/catalog/installation" class="catalog__menu-link"
+										>Инсталляции
+										<svg class="catalog__menu-svg"><use xlink:href="#arrow-down"></use></svg
+									></a>
+									<div class="catalog__menu-submenu">
+										<div class="catalog__menu-title">Инсталляции</div>
+										<div class="catalog__menu-row">
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/installyatsii_dlya_bide"
+															>Инсталляции для биде</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/installyatsii_dlya_dusha"
+															>Инсталляции для душа</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/installyatsii_dlya_unitaza"
+															>Инсталляции для унитаза</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/installyatsii_dlya_chash_genuya"
+															>Инсталляции для чаш Генуя</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/knopki_dlya_installyatsiy"
+															>Кнопки для инсталляций</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/smyvnye_ustroystva_dlya_pissuarov"
+															>Смывные устройства для писсуаров</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/smyvnye_ustroystva_dlya_unitazov"
+															>Смывные устройства для унитазов</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/bachki_skrytogo_montazha"
+															>Бачки скрытого монтажа</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/installyatsii_dlya_pissuarov"
+															>Инсталляции для писсуаров</a
+														>
+													</li>
+													<li>
+														<a
+															href="https://dev3.sanbest.ru/catalog/installyatsii_dlya_rakoviny"
+															>Инсталляции для раковины</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/komplekty_krepleniya"
+															>Комплекты крепления</a
+														>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog__menu-item">
+									<a
+										href="https://dev3.sanbest.ru/catalog/polotencesushitel"
+										class="catalog__menu-link"
+										>Полотенцесушители</a
+									>
+								</li>
+								<li class="catalog__menu-item">
+									<a href="https://dev3.sanbest.ru/catalog/Bide" class="catalog__menu-link">Биде</a>
+								</li>
+								<li class="catalog__menu-item catalog__menu--submenu">
+									<a href="https://dev3.sanbest.ru/catalog/dushevye" class="catalog__menu-link"
+										>Душевые
+										<svg class="catalog__menu-svg"><use xlink:href="#arrow-down"></use></svg
+									></a>
+									<div class="catalog__menu-submenu">
+										<div class="catalog__menu-title">Душевые</div>
+										<div class="catalog__menu-row">
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_dveri"
+															>Душевые двери</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_kabiny"
+															>Душевые кабины</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_kolonny"
+															>Душевые колонны</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_lotki_i_trapy"
+															>Душевые лотки и трапы</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_ograzhdeniya"
+															>Душевые ограждения</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_poddony"
+															>Душевые поддоны</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_ugly"
+															>Душевые углы</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/shtorki_dlya_vanny"
+															>Шторки для ванны</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_paneli"
+															>Душевые панели</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_dveri_"
+															>Душевые двери</a
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="catalog__menu-row__item">
+												<ul class="catalog__menu-item__list">
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_kabiny_komp"
+															>Душевые кабины</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_kolonny_%29"
+															>Душевые колонны</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_paneli_"
+															>Душевые панели</a
+														>
+													</li>
+													<li>
+														<a href="https://dev3.sanbest.ru/catalog/dushevye_ugly_"
+															>Душевые углы</a
+														>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="catalog__menu-item">
+									<a href="https://dev3.sanbest.ru/catalog/pissuary" class="catalog__menu-link"
+										>Писсуары</a
+									>
+								</li>
+								<li class="catalog__menu-item">
+									<a href="https://dev3.sanbest.ru/catalog/spa_basseyny" class="catalog__menu-link"
+										>Spa-бассейны</a
+									>
+								</li>
+								<li class="catalog__menu-item">
+									<a href="https://dev3.sanbest.ru/catalog/kukhonnye_moyki" class="catalog__menu-link"
+										>Кухонные мойки</a
+									>
+								</li>
+								<li class="catalog__menu-item">
+									<a href="https://dev3.sanbest.ru/catalog/sauny" class="catalog__menu-link">Сауны</a>
+								</li>
+								<li class="catalog__menu-item">
+									<a href="https://dev3.sanbest.ru/catalog/chashi_genuya" class="catalog__menu-link"
+										>Чаши Генуя</a
+									>
+								</li>
+							</ul>
+						</div>
+						<!-- /.catalog__wrap -->
+					</nav>
+					<form action="https://dev3.sanbest.ru/catalog/" method="get" class="form-search">
+						<input
+							type="text"
+							name="q"
+							placeholder="Поиск по сайту"
+							class="form-search__input"
+							required="" />
+						<button type="submit" class="form-search__submit">
+							<svg class="form-search__submit-icon"><use xlink:href="#search"></use></svg>
+						</button>
+					</form>
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- /.catalog-search -->
+
+			<main class="page">
+				<div class="page__container _container">
+					<div class="page__body">
+						<h1 class="page__title">Оплата</h1>
+						<div class="page__layout page__layout--gap-reset">
+							<nav class="page__navigation"></nav>
+							<div class="page__content">
+								<div class="accordion-container">
+									<div class="accordion">
+										<div class="accordion__header">
+											<button class="accordion__trigger" type="button">
+												<h2 class="accordion__title">Наличными средствами</h2>
+												<svg class="accordion__icon accordion__icon--open">
+													<use xlink:href="img/icons/icons.svg#plus"></use>
+												</svg>
+												<svg class="accordion__icon accordion__icon--close">
+													<use xlink:href="img/icons/icons.svg#minus"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="accordion__body">
+											<p class="accordion__text">
+												Вы оплачиваете товар сразу же после того, как курьер доставит его, или
+												при самовывозе.
+											</p>
+										</div>
+									</div>
+									<div class="accordion">
+										<div class="accordion__header">
+											<button class="accordion__trigger" type="button">
+												<h2 class="accordion__title">Безналичный расчёт</h2>
+												<svg class="accordion__icon accordion__icon--open">
+													<use xlink:href="img/icons/icons.svg#plus"></use>
+												</svg>
+												<svg class="accordion__icon accordion__icon--close">
+													<use xlink:href="img/icons/icons.svg#minus"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="accordion__body">
+											<p class="accordion__text">
+												Физические и юридические лица могут оплатить счет в том числе и с НДС.
+												Мы вышлем вам счёт, после согласования заказа.
+											</p>
+										</div>
+									</div>
+									<div class="accordion">
+										<div class="accordion__header">
+											<button class="accordion__trigger" type="button">
+												<h2 class="accordion__title">Картой по терминалу</h2>
+												<svg class="accordion__icon accordion__icon--open">
+													<use xlink:href="img/icons/icons.svg#plus"></use>
+												</svg>
+												<svg class="accordion__icon accordion__icon--close">
+													<use xlink:href="img/icons/icons.svg#minus"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="accordion__body">
+											<p class="accordion__text">
+												Вы можете расплатиться картой в
+												<a class="accordion__link" href="#">нашем салоне</a>, или курьеру по
+												терминалу при доставке товара.
+											</p>
+										</div>
+									</div>
+									<div class="accordion">
+										<div class="accordion__header">
+											<button class="accordion__trigger" type="button">
+												<h2 class="accordion__title">Картой онлайн</h2>
+												<svg class="accordion__icon accordion__icon--open">
+													<use xlink:href="img/icons/icons.svg#plus"></use>
+												</svg>
+												<svg class="accordion__icon accordion__icon--close">
+													<use xlink:href="img/icons/icons.svg#minus"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="accordion__body">
+											<p class="accordion__text">
+												Мы вышлем вам ссылку для оплаты по карте после согласования заказа.
+											</p>
+										</div>
+									</div>
+									<div class="accordion">
+										<div class="accordion__header">
+											<button class="accordion__trigger" type="button">
+												<h2 class="accordion__title">Кредит</h2>
+												<svg class="accordion__icon accordion__icon--open">
+													<use xlink:href="img/icons/icons.svg#plus"></use>
+												</svg>
+												<svg class="accordion__icon accordion__icon--close">
+													<use xlink:href="img/icons/icons.svg#minus"></use>
+												</svg>
+											</button>
+										</div>
+										<div class="accordion__body">
+											<p class="accordion__text">
+												Сроком от 3-36 месяцев. Без первоначального взноса по кредиту. Не выходя
+												из дома. <a class="accordion__link" href="#">Подробнее</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container footer__container">
+					<a class="footer__logo"
+						><svg class="footer__logo-icon"><use xlink:href="#logo-gray"></use></svg
+					></a>
+					<div class="footer__left">
+						<div class="box-icons">
+							<a href="https://vk.com/sanbest_room" target="_blank"
+								><img class="box-icons__img" src="images/VK.png" alt=""
+							/></a>
+							<a href="https://dzen.ru/channel/sanbestru" target="_blank"
+								><img class="box-icons__img" src="images/Dzen.png" alt=""
+							/></a>
+							<a href="https://ru.pinterest.com/sanbest_moscow/" target="_blank"
+								><img class="box-icons__img" src="images/Pinterest.png" alt=""
+							/></a>
+							<a><img class="box-icons__img" src="images/Mir.png" alt="" /></a>
+							<a><img class="box-icons__img" src="images/SBP.png" alt="" /></a>
+						</div>
+						<div class="box-icons">
+							<img src="images/visa.png" alt="" />
+							<img src="images/master-card.png" alt="" />
+						</div>
+
+						<div class="copy">®SanBest, 2006-2023. Все права защищены</div>
+					</div>
+
+					<ul class="footer__menu">
+						<li class="footer__menu-item">
+							<a href="https://dev3.sanbest.ru/brands/" class="footer__menu-link">Бренды</a>
+						</li>
+
+						<li class="footer__menu-item">
+							<a href="https://dev3.sanbest.ru/customers/delivery/" class="footer__menu-link"
+								>Доставка и оплата</a
+							>
+						</li>
+
+						<li class="footer__menu-item">
+							<a href="https://dev3.sanbest.ru/news/" class="footer__menu-link">Акции</a>
+						</li>
+
+						<li class="footer__menu-item">
+							<a href="https://dev3.sanbest.ru/contacts/" class="footer__menu-link">Контакты</a>
+						</li>
+					</ul>
+
+					<div class="footer__right">
+						<address class="footer__address">
+							Поселок Заречье, ул. Торговая, с2,<br />
+							ТЦ «Элитстройматериалы», 1 этаж, место А-18
+						</address>
+						<div class="footer__right-grid">
+							<p class="footer_inline">+7 (499) 110 42 61</p>
+							<br />
+							<p class="footer_pd">С 9 до 22 без выходных</p>
+							<a class="footer_pd footer_mb" href="mailto:sale+1929053@sanbest.ru">
+								sale+1929053@sanbest.ru </a
+							><br />
+							<a class="footer_pd footer_mb2" href="https://dev3.sanbest.ru/contacts/feedback.php"
+								>Связаться с нами</a
+							>
+						</div>
+					</div>
+				</div>
+				<!-- /.container -->
+			</footer>
+		</div>
+		<div class="overlay js-overlay" style="display: none"></div>
+		<div class="popup js-popup" id="sign-up"></div>
+		<div class="sprite" aria-hidden="true">
+			<svg display="none" xmlns="http://www.w3.org/2000/svg">
+				<symbol id="favorites" viewBox="0 0 21 19">
+					<path
+						d="M18.5028 2.11164C17.9553 1.44923 17.2677 0.916497 16.4896 0.551809C15.7114 0.187121 14.8621 -0.000440036 14.0028 0.00263663C12.5324 -0.0418843 11.1009 0.478827 10.0028 1.45764C8.90463 0.478827 7.47312 -0.0418843 6.00275 0.00263663C5.1434 -0.000440036 4.29406 0.187121 3.51592 0.551809C2.73778 0.916497 2.05022 1.44923 1.50275 2.11164C0.549754 3.26764 -0.447246 5.36064 0.213754 8.77164C1.26875 14.2186 9.17975 18.6886 9.51375 18.8716C9.66264 18.9547 9.83028 18.9982 10.0008 18.9982C10.1712 18.9982 10.3389 18.9547 10.4878 18.8716C10.8238 18.6846 18.7348 14.2146 19.7878 8.77164C20.4528 5.36064 19.4558 3.26764 18.5028 2.11164ZM17.8288 8.39164C17.0828 12.2426 11.6608 15.8246 10.0028 16.8426C7.66675 15.4326 2.86075 11.8926 2.18175 8.39164C1.66875 5.74564 2.37075 4.20864 3.05075 3.38464C3.41036 2.95075 3.86153 2.60182 4.37191 2.36288C4.88229 2.12395 5.43922 2.00092 6.00275 2.00264C6.60465 1.9575 7.20796 2.06909 7.75389 2.32654C8.29981 2.58399 8.7697 2.97851 9.11775 3.47164C9.20358 3.62957 9.3302 3.7616 9.4844 3.85395C9.63861 3.94631 9.81476 3.99562 9.99451 3.99675C10.1743 3.99787 10.351 3.95076 10.5064 3.86034C10.6617 3.76992 10.79 3.63949 10.8778 3.48264C11.2251 2.98567 11.696 2.58781 12.244 2.32829C12.792 2.06876 13.3982 1.95652 14.0028 2.00264C14.5675 1.99989 15.1258 2.12241 15.6374 2.36139C16.1491 2.60036 16.6014 2.94983 16.9618 3.38464C17.6398 4.20864 18.3418 5.74564 17.8288 8.39164Z"></path>
+				</symbol>
+				<symbol id="basket" viewBox="0 0 22 22">
+					<path
+						d="M1.00013 22H21.0001C21.1435 22 21.2851 21.9692 21.4155 21.9097C21.5459 21.8502 21.662 21.7633 21.7559 21.655C21.8498 21.5467 21.9193 21.4195 21.9597 21.282C22.0001 21.1445 22.0105 20.9999 21.9901 20.858L19.9901 6.858C19.956 6.6198 19.837 6.40191 19.6552 6.24431C19.4734 6.08671 19.2408 5.99997 19.0001 6H16.0001V5C16.0001 3.67392 15.4733 2.40215 14.5357 1.46447C13.598 0.526784 12.3262 0 11.0001 0C9.67405 0 8.40228 0.526784 7.4646 1.46447C6.52692 2.40215 6.00013 3.67392 6.00013 5V6H3.00013C2.7595 5.99997 2.52692 6.08671 2.34507 6.24431C2.16322 6.40191 2.0443 6.6198 2.01013 6.858L0.0101334 20.858C-0.0102198 20.9999 0.0001649 21.1445 0.0405837 21.282C0.0810026 21.4195 0.150511 21.5467 0.244398 21.655C0.338286 21.7633 0.454358 21.8502 0.584748 21.9097C0.715139 21.9692 0.856801 22 1.00013 22ZM8.00013 5C8.00013 4.20435 8.3162 3.44129 8.87881 2.87868C9.44142 2.31607 10.2045 2 11.0001 2C11.7958 2 12.5588 2.31607 13.1215 2.87868C13.6841 3.44129 14.0001 4.20435 14.0001 5V6H8.00013V5ZM3.86713 8H6.00013V11C6.00013 11.2652 6.10549 11.5196 6.29303 11.7071C6.48056 11.8946 6.73492 12 7.00013 12C7.26535 12 7.5197 11.8946 7.70724 11.7071C7.89478 11.5196 8.00013 11.2652 8.00013 11V8H14.0001V11C14.0001 11.2652 14.1055 11.5196 14.293 11.7071C14.4806 11.8946 14.7349 12 15.0001 12C15.2654 12 15.5197 11.8946 15.7072 11.7071C15.8948 11.5196 16.0001 11.2652 16.0001 11V8H18.1331L19.8471 20H2.15313L3.86713 8Z"></path>
+				</symbol>
+				<symbol id="compare" viewBox="0 0 16 19">
+					<path
+						d="M1.25893 8.79492C1.55967 8.79492 1.84808 8.91439 2.06074 9.12704C2.27339 9.33969 2.39286 9.62811 2.39286 9.92885V17.8664C2.39286 18.1671 2.27339 18.4555 2.06074 18.6682C1.84808 18.8808 1.55967 19.0003 1.25893 19.0003C0.958192 19.0003 0.669773 18.8808 0.45712 18.6682C0.244467 18.4555 0.125 18.1671 0.125 17.8664V9.92885C0.125 9.62811 0.244467 9.33969 0.45712 9.12704C0.669773 8.91439 0.958192 8.79492 1.25893 8.79492ZM6.92857 1.99135V17.8664C6.92857 18.1671 7.04804 18.4555 7.26069 18.6682C7.47334 18.8808 7.76176 19.0003 8.0625 19.0003C8.36324 19.0003 8.65166 18.8808 8.86431 18.6682C9.07696 18.4555 9.19643 18.1671 9.19643 17.8664V1.99135C9.19643 1.69061 9.07696 1.40219 8.86431 1.18954C8.65166 0.976889 8.36324 0.857422 8.0625 0.857422C7.76176 0.857422 7.47334 0.976889 7.26069 1.18954C7.04804 1.40219 6.92857 1.69061 6.92857 1.99135ZM13.7321 5.9601V17.8664C13.7321 18.1671 13.8516 18.4555 14.0643 18.6682C14.2769 18.8808 14.5653 19.0003 14.8661 19.0003C15.1668 19.0003 15.4552 18.8808 15.6679 18.6682C15.8805 18.4555 16 18.1671 16 17.8664V5.9601C16 5.65936 15.8805 5.37094 15.6679 5.15829C15.4552 4.94564 15.1668 4.82617 14.8661 4.82617C14.5653 4.82617 14.2769 4.94564 14.0643 5.15829C13.8516 5.37094 13.7321 5.65936 13.7321 5.9601Z"></path>
+				</symbol>
+				<symbol id="search" viewBox="0 0 21 22">
+					<circle cx="9.42871" cy="9.46484" r="7.5" stroke="#999999" stroke-width="2"></circle>
+					<rect
+						x="13.9287"
+						y="15.3789"
+						width="2"
+						height="8"
+						transform="rotate(-45 13.9287 15.3789)"
+						fill="#999999"></rect>
+				</symbol>
+				<symbol id="icon-burger" viewBox="0 0 16 14">
+					<rect width="16" height="2" rx="1"></rect>
+					<rect y="6" width="12" height="2" rx="1"></rect>
+					<rect y="12" width="16" height="2" rx="1"></rect>
+				</symbol>
+				<symbol id="arrow-down" viewBox="0 0 15 10">
+					<rect x="2.27197" y="0.757812" width="10" height="2" transform="rotate(45 2.27197 0.757812)"></rect>
+					<rect x="6.51465" y="7.82812" width="10" height="2" transform="rotate(-45 6.51465 7.82812)"></rect>
+				</symbol>
+				<symbol id="logo-gray" viewBox="0 0 129 36">
+					<path
+						d="M46.5405 8.76408H51.2912V10.1921C52.4247 9.21175 54.5207 8.48633 56.6941 8.48633C60.4791 8.48633 63.024 10.1202 63.024 14.6165V25.6514H58.1022V14.5805C58.1022 11.8292 57.2076 10.6789 54.4561 10.6789C53.4478 10.6815 52.4473 10.8583 51.4978 11.2018V25.6514H46.5405V8.76408Z"
+						fill="#999999"></path>
+					<path
+						d="M70.5875 24.6873V25.697H65.8369V0H70.7587V9.75075C72.1339 8.90129 73.7247 8.4776 75.3349 8.53191C79.8563 8.53191 82.8371 11.5937 82.8371 17.2337C82.8371 22.7724 79.9467 25.9748 75.3349 25.9748C73.5135 25.9748 71.8955 25.5925 70.5875 24.6873ZM77.8475 17.3187C77.8475 12.2701 76.4039 10.5285 73.3746 10.5285C72.4839 10.5336 71.6001 10.687 70.7587 10.9827V23.6057C71.6124 23.9014 72.5079 24.0548 73.4101 24.0599C76.3684 24.0599 77.8475 22.4228 77.8475 17.3187Z"
+						fill="#999999"></path>
+					<path
+						d="M38.7833 9.77672V8.76701H43.5307V25.6511H38.6121V24.7165C37.2358 25.5629 35.6456 25.9853 34.0359 25.9321C29.5145 25.9321 26.5337 22.8703 26.5337 17.2303C26.5337 11.6916 29.4403 8.48926 34.0359 8.48926C35.8476 8.49579 37.4624 8.87158 38.7833 9.77672ZM31.5233 17.1584C31.5233 22.207 32.9669 23.9486 35.9962 23.9486C36.8866 23.943 37.7701 23.7907 38.6121 23.4977V10.8583C37.7584 10.5627 36.863 10.4093 35.9607 10.4041C33.0024 10.4041 31.5233 12.0412 31.5233 17.1584Z"
+						fill="#999999"></path>
+					<path
+						d="M94.5828 25.8148C88.7697 25.8148 84.7393 24.0372 84.7393 17.1783C84.7393 11.2736 88.3531 8.49609 92.9648 8.49609C97.9544 8.49609 100.948 11.1789 100.948 16.8875C100.945 17.3078 100.91 17.7272 100.845 18.1423H89.5932C89.6966 23.1189 91.1079 24.1646 95.5808 24.1646H99.8986V25.7984L94.5828 25.8148ZM89.5932 16.564H96.3365C96.2331 11.8291 95.6906 10.1593 93.0004 10.1593C90.4523 10.1593 89.661 11.7932 89.5932 16.564Z"
+						fill="#999999"></path>
+					<path
+						d="M102.931 25.8144V24.1544H108.15C111.661 24.1544 112.83 23.3538 112.83 21.7886C112.869 21.4461 112.8 21.0998 112.633 20.7993C112.466 20.4988 112.209 20.2595 111.9 20.1156C111.144 19.6973 110.043 19.3836 108.67 19.0372C106.949 18.583 105.298 18.1321 104.368 17.1551C103.943 16.7301 103.61 16.2199 103.391 15.6572C103.172 15.0945 103.071 14.4917 103.096 13.8874C103.096 9.56752 106.913 8.59375 110.32 8.59375C112.087 8.59351 113.85 8.75648 115.588 9.08063V9.71783C114.176 9.5087 112.662 10.1949 111.25 10.1949C108.463 10.1949 107.43 10.9628 107.398 12.3908C107.398 13.3286 107.74 13.8155 108.396 14.1651C109.151 14.5834 110.185 14.8612 111.422 15.1749C113.107 15.6258 114.554 16.0441 115.552 16.776C116.653 17.5766 117.167 18.6549 117.135 20.4685C117.096 24.5367 113.311 25.8144 108.631 25.8144H102.931Z"
+						fill="#999999"></path>
+					<path
+						d="M110.498 8.59041H119.844V3.9209H124.802V8.59041H128.858V10.1916H124.802V21.684C124.802 23.5629 125.489 24.1184 127.208 24.1184C127.764 24.1046 128.318 24.0345 128.861 23.9093V25.4091C127.639 25.6704 126.393 25.7985 125.144 25.7915C122.115 25.7915 119.844 24.8112 119.844 20.8899V10.1916H110.724L110.498 8.59041Z"
+						fill="#999999"></path>
+					<path
+						d="M11.6037 5.18254H23.2526C23.2526 3.80804 22.7129 2.48984 21.7523 1.51793C20.7918 0.546016 19.489 0 18.1305 0L6.6399 0C4.87915 0.000865881 3.19076 0.708968 1.94573 1.96871C0.70069 3.22846 0.000856674 4.93679 9.03193e-07 6.71834V8.49596C-0.000423626 9.2642 0.148813 10.025 0.439177 10.7348C0.729541 11.4447 1.15534 12.0897 1.69222 12.6329C2.22911 13.1761 2.86655 13.6069 3.56811 13.9007C4.26966 14.1945 5.02157 14.3455 5.78084 14.3451H19.9068L18.883 18.0507C18.6779 18.7924 18.2204 19.4371 17.5912 19.8707L18.4406 21.632H17.3845L16.0055 20.4361C15.9215 20.4361 15.8376 20.4557 15.7504 20.4557H9.24935C9.11755 20.454 8.98597 20.4442 8.85535 20.4263L7.46665 21.632H6.41383L7.30518 19.7956C6.82006 19.4323 6.44526 18.9387 6.22329 18.3709C5.96405 17.706 5.51311 17.1354 4.92908 16.7333C4.34506 16.3312 3.65497 16.1162 2.94855 16.1162H9.03193e-07V18.6062C9.03193e-07 20.4746 0.733585 22.2666 2.03937 23.5878C2.68593 24.242 3.45351 24.7609 4.29828 25.115C5.14305 25.469 6.04847 25.6513 6.96285 25.6513H17.2973C18.2705 25.653 19.2344 25.4605 20.1339 25.0849C21.0335 24.7093 21.851 24.1579 22.5397 23.4623C23.2284 22.7666 23.7748 21.9404 24.1476 21.0309C24.5204 20.1214 24.7123 19.1464 24.7123 18.1618V13.4628C24.7127 12.6101 24.547 11.7656 24.2247 10.9776C23.9024 10.1897 23.4297 9.47372 22.8337 8.87072C22.2378 8.26771 21.5302 7.78947 20.7514 7.46332C19.9727 7.13718 19.1381 6.96953 18.2952 6.96996H14.2099L14.6911 9.10375H8.65189L9.29779 6.96996C9.43325 6.45628 9.73289 6.00239 10.15 5.67906C10.5671 5.35574 11.0782 5.18116 11.6037 5.18254Z"
+						fill="#999999"></path>
+					<path d="M8.65186 9.10449H9.43663V14.336H8.65186V9.10449Z" fill="#22CBFF"></path>
+					<path d="M10.4053 9.10449H11.19V14.336H10.4053V9.10449Z" fill="#22CBFF"></path>
+					<path d="M12.1592 9.10449H12.944V14.336H12.1592V9.10449Z" fill="#22CBFF"></path>
+					<path d="M13.9126 9.10449H14.6974V14.336H13.9126V9.10449Z" fill="#22CBFF"></path>
+					<path
+						d="M16.3252 19.6621C16.3252 19.6621 17.2682 19.6098 17.7946 18.2472C18.1419 17.1783 18.416 16.0865 18.6149 14.9795H17.4911L16.3252 19.6621Z"
+						fill="#999999"></path>
+				</symbol>
+				<symbol id="phone" viewBox="0 0 18 18">
+					<path
+						d="M7.11419 5.26845C7.31878 4.79973 7.37739 4.28024 7.28237 3.77772C7.18735 3.2752 6.94311 2.81297 6.58151 2.45131L4.87547 0.745314C4.59595 0.462474 4.2532 0.25013 3.87548 0.125792C3.49776 0.00145412 3.0959 -0.0313149 2.70303 0.0301873C2.3057 0.0885354 1.9279 0.240387 1.60072 0.473248C1.27354 0.706109 1.00633 1.01332 0.821062 1.36962C-0.00441282 2.92267 -0.216708 4.72903 0.226198 6.43115C1.31365 10.7514 7.25083 16.6884 11.5712 17.7758C12.1543 17.9237 12.7534 17.999 13.3549 18C14.498 17.9993 15.6235 17.7183 16.6328 17.1818C16.9867 16.9973 17.2921 16.7321 17.5245 16.4076C17.7568 16.0832 17.9095 15.7087 17.9703 15.3143C18.0311 14.9199 17.9982 14.5167 17.8743 14.1374C17.7504 13.7581 17.539 13.4132 17.2572 13.1308L15.5544 11.4239C15.1924 11.0626 14.73 10.8185 14.2274 10.7235C13.7248 10.6285 13.2053 10.687 12.7363 10.8913C12.289 11.0844 11.881 11.3582 11.5327 11.6989C11.1146 12.117 9.57629 11.5107 8.03471 9.97078C6.49314 8.43088 5.88845 6.89181 6.3033 6.47288C6.64536 6.12467 6.92025 5.71637 7.11419 5.26845ZM6.87608 11.1294C8.75313 13.0047 11.2766 14.2681 12.6856 12.8575C12.8933 12.6587 13.1353 12.4993 13.3999 12.387C13.566 12.3162 13.7496 12.297 13.9267 12.3319C14.1039 12.3667 14.2664 12.4541 14.3933 12.5825L16.0993 14.2885C16.1995 14.3876 16.2748 14.5091 16.3189 14.643C16.363 14.7768 16.3747 14.9192 16.353 15.0585C16.3319 15.2016 16.2771 15.3376 16.193 15.4553C16.1089 15.5729 15.998 15.6689 15.8694 15.7352C14.6746 16.3772 13.2801 16.5398 11.9697 16.1901C8.25809 15.2532 2.75212 9.7474 1.81687 6.03185C1.46666 4.72036 1.62935 3.32472 2.27181 2.12893C2.3385 2.001 2.43462 1.89074 2.55227 1.80723C2.66992 1.72373 2.80572 1.66937 2.9485 1.64863C2.99396 1.64143 3.03993 1.63787 3.08596 1.638C3.20363 1.63802 3.32013 1.66139 3.4287 1.70676C3.53727 1.75212 3.63576 1.81858 3.71847 1.90228L5.42451 3.60828C5.55281 3.73507 5.64005 3.89748 5.67492 4.07446C5.70979 4.25143 5.69068 4.4348 5.62007 4.60078C5.50833 4.86716 5.34888 5.1109 5.14958 5.32C3.73892 6.72652 5.00148 9.24747 6.87608 11.1294Z"></path>
+				</symbol>
+			</svg>
+		</div>
+		<div id="dialog-content" style="display: none; max-width: 360px">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Обратный звонок</div>
+				</div>
+				<div class="modal-body">
+					<h3 class="second">Всего 15 секунд!</h3>
+					<p class="text-bold">
+						И наш консультант <br />
+						перезвонит Вам!
+					</p>
+					<form
+						method="POST"
+						action="https://dev3.sanbest.ru/bitrix/ajax/Callback.php"
+						class="c-form c-form_modal js-form-call">
+						<div class="input-group mb-3">
+							<div class="bg-white border-right-0 input-group-text">
+								<img src="images/flag-russia.png" alt="" />
+							</div>
+							<input
+								class="js-phone-field"
+								name="phone"
+								required="1"
+								type="text"
+								placeholder="+7 (___) ___-__-__"
+								value="" />
+						</div>
+						<div class="timer">
+							<img class="me-2" src="images/clock-yellow.png" alt="" />
+							<h4 class="js-timer-call">00:<span class="seconds">15</span>:<span class="ms">00</span></h4>
+						</div>
+						<p class="text-center h-text-sm text-muted">
+							Нажимая на кнопку “жду звонка” вы даете согласие с Политкой обработки персональных данных.
+						</p>
+						<div class="d-flex justify-content-center">
+							<button type="submit" class="btn btn-secondary btn-lg w-100">Жду звонка</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			if (!window.BX) window.BX = {};
+			if (!window.BX.message)
+				window.BX.message = function (mess) {
+					if (typeof mess === 'object') {
+						for (let i in mess) {
+							BX.message[i] = mess[i];
+						}
+						return true;
+					}
+				};
+		</script>
+		<script type="text/javascript">
+			(window.BX || top.BX).message({
+				JS_CORE_LOADING: 'Загрузка...',
+				JS_CORE_NO_DATA: '- Нет данных -',
+				JS_CORE_WINDOW_CLOSE: 'Закрыть',
+				JS_CORE_WINDOW_EXPAND: 'Развернуть',
+				JS_CORE_WINDOW_NARROW: 'Свернуть в окно',
+				JS_CORE_WINDOW_SAVE: 'Сохранить',
+				JS_CORE_WINDOW_CANCEL: 'Отменить',
+				JS_CORE_WINDOW_CONTINUE: 'Продолжить',
+				JS_CORE_H: 'ч',
+				JS_CORE_M: 'м',
+				JS_CORE_S: 'с',
+				JSADM_AI_HIDE_EXTRA: 'Скрыть лишние',
+				JSADM_AI_ALL_NOTIF: 'Показать все',
+				JSADM_AUTH_REQ: 'Требуется авторизация!',
+				JS_CORE_WINDOW_AUTH: 'Войти',
+				JS_CORE_IMAGE_FULL: 'Полный размер',
+			});
+		</script>
+		<script type="text/javascript" src="./Интернет магазин сантехники Sanbest_files/core.js.Без названия"></script>
+		<script>
+			BX.setJSList([
+				'/bitrix/js/main/core/core_ajax.js',
+				'/bitrix/js/main/core/core_promise.js',
+				'/bitrix/js/main/polyfill/promise/js/promise.js',
+				'/bitrix/js/main/loadext/loadext.js',
+				'/bitrix/js/main/loadext/extension.js',
+				'/bitrix/js/main/polyfill/promise/js/promise.js',
+				'/bitrix/js/main/polyfill/find/js/find.js',
+				'/bitrix/js/main/polyfill/includes/js/includes.js',
+				'/bitrix/js/main/polyfill/matches/js/matches.js',
+				'/bitrix/js/ui/polyfill/closest/js/closest.js',
+				'/bitrix/js/main/polyfill/fill/main.polyfill.fill.js',
+				'/bitrix/js/main/polyfill/find/js/find.js',
+				'/bitrix/js/main/polyfill/matches/js/matches.js',
+				'/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js',
+				'/bitrix/js/main/core/core.js',
+				'/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js',
+				'/bitrix/js/main/lazyload/dist/lazyload.bundle.js',
+				'/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js',
+				'/bitrix/js/main/parambag/dist/parambag.bundle.js',
+			]);
+			BX.setCSSList([
+				'/bitrix/js/main/lazyload/dist/lazyload.bundle.css',
+				'/bitrix/js/main/parambag/dist/parambag.bundle.css',
+			]);
+		</script>
+		<script type="text/javascript">
+			(window.BX || top.BX).message({
+				pull_server_enabled: 'Y',
+				pull_config_timestamp: '1591478181',
+				pull_guest_mode: 'N',
+				pull_guest_user_id: '0',
+			});
+			(window.BX || top.BX).message({
+				PULL_OLD_REVISION: 'Для продолжения корректной работы с сайтом необходимо перезагрузить страницу.',
+			});
+		</script>
+		<script type="text/javascript">
+			(window.BX || top.BX).message({
+				JS_CORE_LOADING: 'Загрузка...',
+				JS_CORE_NO_DATA: '- Нет данных -',
+				JS_CORE_WINDOW_CLOSE: 'Закрыть',
+				JS_CORE_WINDOW_EXPAND: 'Развернуть',
+				JS_CORE_WINDOW_NARROW: 'Свернуть в окно',
+				JS_CORE_WINDOW_SAVE: 'Сохранить',
+				JS_CORE_WINDOW_CANCEL: 'Отменить',
+				JS_CORE_WINDOW_CONTINUE: 'Продолжить',
+				JS_CORE_H: 'ч',
+				JS_CORE_M: 'м',
+				JS_CORE_S: 'с',
+				JSADM_AI_HIDE_EXTRA: 'Скрыть лишние',
+				JSADM_AI_ALL_NOTIF: 'Показать все',
+				JSADM_AUTH_REQ: 'Требуется авторизация!',
+				JS_CORE_WINDOW_AUTH: 'Войти',
+				JS_CORE_IMAGE_FULL: 'Полный размер',
+			});
+		</script>
+		<script type="text/javascript">
+			(window.BX || top.BX).message({
+				LANGUAGE_ID: 'ru',
+				FORMAT_DATE: 'DD.MM.YYYY',
+				FORMAT_DATETIME: 'DD.MM.YYYY HH:MI:SS',
+				COOKIE_PREFIX: 'BITRIX_SM',
+				SERVER_TZ_OFFSET: '10800',
+				UTF_MODE: 'Y',
+				SITE_ID: 's1',
+				SITE_DIR: '/',
+				USER_ID: '',
+				SERVER_TIME: '1695027658',
+				USER_TZ_OFFSET: '0',
+				USER_TZ_AUTO: 'Y',
+				bitrix_sessid: '920a33773b1ff258c21725d96f9b26d5',
+			});
+		</script>
+		<script
+			type="text/javascript"
+			src="./Интернет магазин сантехники Sanbest_files/protobuf.js.Без названия"></script>
+		<script type="text/javascript" src="js/model.js.Без названия"></script>
+		<script type="text/javascript" src="js/rest.client.js.Без названия"></script>
+		<script type="text/javascript" src="js/pull.client.js.Без названия"></script>
+		<script type="text/javascript" src="js/fancybox.umd.js.Без названия"></script>
+		<script type="text/javascript" src="js/pageobject.js.Без названия"></script>
+		<script type="text/javascript" src="js/core_window.js.Без названия"></script>
+		<script type="text/javascript">
+			(function () {
+				'use strict';
+
+				var counter = function () {
+					var cookie = (function (name) {
+						var parts = ('; ' + document.cookie).split('; ' + name + '=');
+						if (parts.length == 2) {
+							try {
+								return JSON.parse(decodeURIComponent(parts.pop().split(';').shift()));
+							} catch (e) {}
+						}
+					})('BITRIX_CONVERSION_CONTEXT_s1');
+
+					if (cookie && cookie.EXPIRE >= BX.message('SERVER_TIME')) return;
+
+					var request = new XMLHttpRequest();
+					request.open('POST', '/bitrix/tools/conversion/ajax_counter.php', true);
+					request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+					request.send(
+						'SITE_ID=' +
+							encodeURIComponent('s1') +
+							'&sessid=' +
+							encodeURIComponent(BX.bitrix_sessid()) +
+							'&HTTP_REFERER=' +
+							encodeURIComponent(document.referrer)
+					);
+				};
+
+				if (window.frameRequestStart === true) BX.addCustomEvent('onFrameDataReceived', counter);
+				else BX.ready(counter);
+			})();
+		</script>
+		<script type="text/javascript" src="js/app.min.js.Без названия"></script>
+		<script type="text/javascript" src="js/jquery.inputmask.min.js.Без названия"></script>
+		<script type="text/javascript" src="js/app.js.Без названия"></script>
+		<script type="text/javascript">
+			var _ba = _ba || [];
+			_ba.push(['aid', '2bdf90a7b8fd50cd4ee51403dc026efe']);
+			_ba.push(['host', 'dev3.sanbest.ru']);
+			(function () {
+				var ba = document.createElement('script');
+				ba.type = 'text/javascript';
+				ba.async = true;
+				ba.src = (document.location.protocol == 'https:' ? 'https://' : 'http://') + 'bitrix.info/ba.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ba, s);
+			})();
+		</script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/app.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.slider').on(`init reInit`, function (event, slick) {
+					$('.counter').text(1 + ' из ' + slick.slideCount);
+				});
+				$('.slider').on(`afterChange`, function (event, slick, currentSlide, nextSlide) {
+					$('.counter').text(currentSlide + 1 + ' из ' + slick.slideCount);
+				});
+				$('.slider').slick({
+					slidesToShow: 3,
+					dots: false,
+				});
+			});
+		</script>
+	</body>
+</html>
